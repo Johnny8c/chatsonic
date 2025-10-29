@@ -490,3 +490,23 @@ body.dark-mode .conclusion p {
     font-size: 1.5em;
   }
 }
+
+/* ===== ANIMACIÓN PARA LA PALABRA "FUTURO" ===== */
+.highlight-future {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: translateX(0);
+}
+
+/* Al hacer hover en el ítem del menú */
+.sidebar li:hover .highlight-future {
+  transform: translateX(6px);
+  color: #fff;
+}
+
+/* Cuando el ítem está activo */
+.sidebar li.active .highlight-future {
+  transform: translateX(6px);
+  color: #fff;
+  font-weight: 600;
+}

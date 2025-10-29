@@ -20,3 +20,4 @@ toggleBtn.addEventListener("click", () => {
     icon.classList.replace("fa-sun", "fa-moon");
   }
 });
+

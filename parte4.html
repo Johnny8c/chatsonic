@@ -1,462 +1,546 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChatSonic - Ventajas y Limitaciones</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/parte4.css" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatSonic - Ventajas y Limitaciones</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/parte4.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png"
+          alt="Logo ChatSonic"
+          class="logo"
+        />
+        <h1>CHATSONIC</h1>
+      </div>
 
-</head>
-<body>
-  <header class="header">
-    <div class="logo-container">
-      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Logo ChatSonic" class="logo" />
-      <h1>CHATSONIC</h1>
+      <button id="toggle-theme" class="theme-btn" title="Cambiar tema">
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
+
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li data-page="inicio" onclick="window.location.href='index.html'">
+            <span>Inicio</span><i class="fas fa-home"></i>
+          </li>
+          <li
+            data-page="funciones"
+            onclick="window.location.href='parte2.html'"
+          >
+            <span>Funciones Principales</span><i class="fas fa-cogs"></i>
+          </li>
+          <li data-page="ventajas" class="active">
+            <span>Ventajas y Limitaciones</span
+            ><i class="fas fa-balance-scale"></i>
+          </li>
+          <li
+            data-page="conclusiones"
+            onclick="window.location.href='parte5.html'"
+          >
+            <span
+              >Conclusiones y
+              <span class="highlight-future">&nbsp;Futuro</span></span
+            ><i class="fas fa-lightbulb"></i>
+          </li>
+          <li data-page="contactos">
+            <span>Contactos</span><i class="fas fa-user-friends"></i>
+          </li>
+          <li data-page="configuracion">
+            <span>Configuración</span><i class="fas fa-cog"></i>
+          </li>
+          <li data-page="ayuda">
+            <span>Ayuda</span><i class="fas fa-question-circle"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main-content">
+        <!-- Hero Section -->
+        <div class="hero-section">
+          <div class="hero-content">
+            <i class="fas fa-brain hero-icon"></i>
+            <h1>Ventajas y Limitaciones de ChatSonic</h1>
+            <p class="hero-subtitle">
+              Conoce las capacidades y restricciones de esta potente IA
+              conversacional
+            </p>
+          </div>
+        </div>
+
+        <!-- Sección de Ventajas -->
+        <div class="section-container">
+          <div class="section-title">
+            <i class="fas fa-check-circle"></i>
+            <h2>Ventajas Principales</h2>
+          </div>
+
+          <div class="advantages-grid">
+            <div class="advantage-card">
+              <div class="icon-wrapper success">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Búsquedas en Tiempo Real</h3>
+              <p>
+                ChatSonic se conecta directamente con Google para obtener
+                información actualizada al instante. A diferencia de otros
+                modelos con datos estáticos, puedes consultar noticias, eventos
+                recientes y datos actualizados.
+              </p>
+              <div class="feature-badge">Información actualizada</div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="icon-wrapper success">
+                <i class="fas fa-microphone"></i>
+              </div>
+              <h3>Comandos de Voz</h3>
+              <p>
+                Interactúa de forma natural mediante comandos de voz. Perfecto
+                para cuando estás en movimiento o prefieres una comunicación más
+                fluida sin necesidad de escribir.
+              </p>
+              <div class="feature-badge">Manos libres</div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="icon-wrapper success">
+                <i class="fas fa-image"></i>
+              </div>
+              <h3>Generación de Imágenes</h3>
+              <p>
+                Crea imágenes únicas con IA basándote en descripciones
+                textuales. Ideal para diseñadores, marketers y creativos que
+                necesitan visualizar conceptos rápidamente.
+              </p>
+              <div class="feature-badge">IA Artística</div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="icon-wrapper success">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Personalización Avanzada</h3>
+              <p>
+                Elige entre diferentes personalidades de IA adaptadas a tus
+                necesidades: desde un asistente formal hasta un tutor educativo
+                o un compañero creativo.
+              </p>
+              <div class="feature-badge">16+ Personalidades</div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="icon-wrapper success">
+                <i class="fas fa-language"></i>
+              </div>
+              <h3>Soporte Multiidioma</h3>
+              <p>
+                Comunícate en más de 25 idiomas diferentes con traducciones
+                precisas y contextuales. Perfecto para equipos internacionales y
+                comunicación global.
+              </p>
+              <div class="feature-badge">25+ Idiomas</div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="icon-wrapper success">
+                <i class="fas fa-pen-fancy"></i>
+              </div>
+              <h3>Asistencia Creativa</h3>
+              <p>
+                Genera contenido creativo como artículos, posts para redes
+                sociales, guiones y más. Con plantillas predefinidas para
+                acelerar tu proceso creativo.
+              </p>
+              <div class="feature-badge">Contenido único</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de Limitaciones -->
+        <div class="section-container">
+          <div class="section-title warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h2>Limitaciones</h2>
+          </div>
+
+          <div class="limitations-grid">
+            <div class="limitation-card">
+              <div class="icon-wrapper warning">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h3>Costo del Servicio</h3>
+              <p>
+                Las funciones premium requieren una suscripción mensual. El plan
+                gratuito tiene restricciones significativas en el uso diario.
+              </p>
+              <div class="price-info">
+                <span class="price-tag">Desde $19/mes</span>
+              </div>
+            </div>
+
+            <div class="limitation-card">
+              <div class="icon-wrapper warning">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Límite de Palabras</h3>
+              <p>
+                Cada plan tiene un límite mensual de palabras generadas. Una vez
+                alcanzado, debes esperar al siguiente ciclo o actualizar tu
+                plan.
+              </p>
+              <div class="price-info">
+                <span class="limit-tag">10,000 - 100,000 palabras/mes</span>
+              </div>
+            </div>
+
+            <div class="limitation-card">
+              <div class="icon-wrapper warning">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Programación Limitada</h3>
+              <p>
+                Aunque puede generar código, no es tan robusto como otras IAs
+                especializadas en desarrollo. Puede tener dificultades con
+                algoritmos complejos.
+              </p>
+            </div>
+
+            <div class="limitation-card">
+              <div class="icon-wrapper warning">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+              <h3>Precisión Variable</h3>
+              <p>
+                Las búsquedas en tiempo real no siempre garantizan información
+                100% precisa. Es importante verificar datos críticos en fuentes
+                oficiales.
+              </p>
+            </div>
+
+            <div class="limitation-card">
+              <div class="icon-wrapper warning">
+                <i class="fas fa-wifi"></i>
+              </div>
+              <h3>Dependencia de Internet</h3>
+              <p>
+                Requiere una conexión a internet estable y rápida para funcionar
+                correctamente. No hay versión offline disponible.
+              </p>
+            </div>
+
+            <div class="limitation-card">
+              <div class="icon-wrapper warning">
+                <i class="fas fa-user-clock"></i>
+              </div>
+              <h3>Curva de Aprendizaje</h3>
+              <p>
+                Para aprovechar todas las funciones y personalidades, se
+                necesita tiempo de exploración y adaptación a la plataforma.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de Comparación -->
+        <div class="section-container">
+          <div class="section-title comparison">
+            <i class="fas fa-chart-line"></i>
+            <h2>Comparación con Otras IAs del Mercado</h2>
+          </div>
+
+          <div class="comparison-wrapper">
+            <div class="comparison-intro">
+              <p>
+                Para ayudarte a tomar una decisión informada, hemos comparado
+                ChatSonic con las principales alternativas del mercado. Cada IA
+                tiene sus fortalezas únicas según tu caso de uso.
+              </p>
+            </div>
+
+            <div class="comparison-grid">
+              <!-- ChatGPT -->
+              <div class="ai-comparison-card">
+                <div class="ai-logo chatgpt">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3>ChatGPT</h3>
+                <div class="ai-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="rating-text">Líder del mercado</span>
+                </div>
+
+                <div class="ai-features">
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Respuestas extremadamente detalladas</span>
+                  </div>
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Excelente para programación</span>
+                  </div>
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Gran comunidad y recursos</span>
+                  </div>
+                  <div class="feature-item con">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Sin acceso a internet (v. gratuita)</span>
+                  </div>
+                  <div class="feature-item con">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Información limitada hasta 2023</span>
+                  </div>
+                </div>
+
+                <div class="best-for">
+                  <strong>Ideal para:</strong> Desarrollo, análisis profundo,
+                  tareas académicas
+                </div>
+              </div>
+
+              <!-- Google Bard -->
+              <div class="ai-comparison-card">
+                <div class="ai-logo bard">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <h3>Google Bard</h3>
+                <div class="ai-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="rating-text">Integración Google</span>
+                </div>
+
+                <div class="ai-features">
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Integración con servicios Google</span>
+                  </div>
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Información actualizada</span>
+                  </div>
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Completamente gratuito</span>
+                  </div>
+                  <div class="feature-item con">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Menos opciones de personalización</span>
+                  </div>
+                  <div class="feature-item con">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Creatividad limitada en algunas tareas</span>
+                  </div>
+                </div>
+
+                <div class="best-for">
+                  <strong>Ideal para:</strong> Búsquedas, usuarios de Google
+                  Workspace
+                </div>
+              </div>
+
+              <!-- Claude -->
+              <div class="ai-comparison-card">
+                <div class="ai-logo claude">
+                  <i class="fas fa-sparkles"></i>
+                </div>
+                <h3>Claude AI</h3>
+                <div class="ai-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="rating-text">Análisis avanzado</span>
+                </div>
+
+                <div class="ai-features">
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Comprensión contextual superior</span>
+                  </div>
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Análisis profundo y detallado</span>
+                  </div>
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Enfoque en seguridad y ética</span>
+                  </div>
+                  <div class="feature-item con">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Disponibilidad limitada en algunos países</span>
+                  </div>
+                  <div class="feature-item con">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Sin generación de imágenes</span>
+                  </div>
+                </div>
+
+                <div class="best-for">
+                  <strong>Ideal para:</strong> Análisis de documentos, escritura
+                  profesional
+                </div>
+              </div>
+
+              <!-- ChatSonic -->
+              <div class="ai-comparison-card featured">
+                <div class="featured-badge">
+                  <i class="fas fa-star"></i> Evaluado
+                </div>
+                <div class="ai-logo chatsonic">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <h3>ChatSonic</h3>
+                <div class="ai-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="rating-text">Más versátil</span>
+                </div>
+
+                <div class="ai-features">
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Información en tiempo real</span>
+                  </div>
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Generación de imágenes integrada</span>
+                  </div>
+                  <div class="feature-item pro">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Comandos de voz disponibles</span>
+                  </div>
+                  <div class="feature-item con">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Requiere suscripción premium</span>
+                  </div>
+                  <div class="feature-item con">
+                    <i class="fas fa-minus-circle"></i>
+                    <span>Límites de uso mensuales</span>
+                  </div>
+                </div>
+
+                <div class="best-for">
+                  <strong>Ideal para:</strong> Marketing, contenido multimedia,
+                  búsquedas actualizadas
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabla Comparativa -->
+          <div class="comparison-table">
+            <h3><i class="fas fa-table"></i> Tabla Comparativa</h3>
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Característica</th>
+                    <th>ChatSonic</th>
+                    <th>ChatGPT</th>
+                    <th>Bard</th>
+                    <th>Claude</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Búsqueda en tiempo real</strong></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-times no"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-times no"></i></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Generación de imágenes</strong></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-times no"></i></td>
+                    <td><i class="fas fa-times no"></i></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Comandos de voz</strong></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-times no"></i></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Versión gratuita</strong></td>
+                    <td><i class="fas fa-check-circle limited"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Programación avanzada</strong></td>
+                    <td><i class="fas fa-check-circle limited"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-check-circle limited"></i></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Personalización</strong></td>
+                    <td><i class="fas fa-check yes"></i></td>
+                    <td><i class="fas fa-check-circle limited"></i></td>
+                    <td><i class="fas fa-times no"></i></td>
+                    <td><i class="fas fa-check-circle limited"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Conclusión Final -->
+          <div class="final-conclusion">
+            <div class="conclusion-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="conclusion-content">
+              <h3>Conclusión y Recomendación</h3>
+              <p>
+                <strong>ChatSonic</strong> destaca por su
+                <strong>versatilidad y capacidades multimedia</strong>, siendo
+                ideal para profesionales del marketing, creadores de contenido y
+                equipos que necesitan información actualizada constantemente. Su
+                capacidad de búsqueda en tiempo real y generación de imágenes lo
+                hace único en el mercado.
+              </p>
+              <p>
+                Sin embargo, si tu enfoque principal es el
+                <strong>desarrollo de software</strong> o necesitas análisis
+                extremadamente detallados,
+                <strong>ChatGPT o Claude</strong> podrían ser mejores opciones.
+                Para usuarios que buscan una solución gratuita con buena
+                integración de servicios, <strong>Google Bard</strong> es una
+                excelente alternativa.
+              </p>
+              <div class="recommendation-box">
+                <i class="fas fa-trophy"></i>
+                <strong>Recomendación:</strong> Prueba ChatSonic si necesitas
+                una herramienta todo-en-uno para marketing digital, contenido
+                creativo y estar siempre actualizado con información en tiempo
+                real.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón de regreso -->
+        <div class="back-button-container">
+          <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al inicio
+          </a>
+        </div>
+      </section>
     </div>
 
-    <button id="toggle-theme" class="theme-btn" title="Cambiar tema">
-      <i class="fas fa-moon"></i>
-    </button>
-  </header>
-
-  <div class="container">
-    <nav class="sidebar">
-      <ul>
-        <li data-page="inicio" onclick="window.location.href='index.html'">
-          <span>Inicio</span><i class="fas fa-home"></i>
-        </li>
-        <li data-page="mensajes">
-          <span>Mensajes</span><i class="fas fa-comments"></i>
-        </li>
-        <li data-page="ventajas" class="active">
-          <span>Ventajas y Limitaciones</span><i class="fas fa-balance-scale"></i>
-        </li>
-        <li data-page="conclusiones" onclick="window.location.href='parte5.html'">
-          <span>Conclusiones y <span class="highlight-future">&nbsp;Futuro</span></span><i class="fas fa-lightbulb"></i>
-        </li>
-        <li data-page="contactos">
-          <span>Contactos</span><i class="fas fa-user-friends"></i>
-        </li>
-        <li data-page="configuracion">
-          <span>Configuración</span><i class="fas fa-cog"></i>
-        </li>
-        <li data-page="ayuda">
-          <span>Ayuda</span><i class="fas fa-question-circle"></i>
-        </li>
-      </ul>
-    </nav>
-
-    <section class="main-content">
-      <!-- Hero Section -->
-      <div class="hero-section">
-        <div class="hero-content">
-          <i class="fas fa-brain hero-icon"></i>
-          <h1>Ventajas y Limitaciones de ChatSonic</h1>
-          <p class="hero-subtitle">Conoce las capacidades y restricciones de esta potente IA conversacional</p>
-        </div>
-      </div>
-
-      <!-- Sección de Ventajas -->
-      <div class="section-container">
-        <div class="section-title">
-          <i class="fas fa-check-circle"></i>
-          <h2>Ventajas Principales</h2>
-        </div>
-
-        <div class="advantages-grid">
-          <div class="advantage-card">
-            <div class="icon-wrapper success">
-              <i class="fas fa-globe"></i>
-            </div>
-            <h3>Búsquedas en Tiempo Real</h3>
-            <p>ChatSonic se conecta directamente con Google para obtener información actualizada al instante. A diferencia de otros modelos con datos estáticos, puedes consultar noticias, eventos recientes y datos actualizados.</p>
-            <div class="feature-badge">Información actualizada</div>
-          </div>
-
-          <div class="advantage-card">
-            <div class="icon-wrapper success">
-              <i class="fas fa-microphone"></i>
-            </div>
-            <h3>Comandos de Voz</h3>
-            <p>Interactúa de forma natural mediante comandos de voz. Perfecto para cuando estás en movimiento o prefieres una comunicación más fluida sin necesidad de escribir.</p>
-            <div class="feature-badge">Manos libres</div>
-          </div>
-
-          <div class="advantage-card">
-            <div class="icon-wrapper success">
-              <i class="fas fa-image"></i>
-            </div>
-            <h3>Generación de Imágenes</h3>
-            <p>Crea imágenes únicas con IA basándote en descripciones textuales. Ideal para diseñadores, marketers y creativos que necesitan visualizar conceptos rápidamente.</p>
-            <div class="feature-badge">IA Artística</div>
-          </div>
-
-          <div class="advantage-card">
-            <div class="icon-wrapper success">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h3>Personalización Avanzada</h3>
-            <p>Elige entre diferentes personalidades de IA adaptadas a tus necesidades: desde un asistente formal hasta un tutor educativo o un compañero creativo.</p>
-            <div class="feature-badge">16+ Personalidades</div>
-          </div>
-
-          <div class="advantage-card">
-            <div class="icon-wrapper success">
-              <i class="fas fa-language"></i>
-            </div>
-            <h3>Soporte Multiidioma</h3>
-            <p>Comunícate en más de 25 idiomas diferentes con traducciones precisas y contextuales. Perfecto para equipos internacionales y comunicación global.</p>
-            <div class="feature-badge">25+ Idiomas</div>
-          </div>
-
-          <div class="advantage-card">
-            <div class="icon-wrapper success">
-              <i class="fas fa-pen-fancy"></i>
-            </div>
-            <h3>Asistencia Creativa</h3>
-            <p>Genera contenido creativo como artículos, posts para redes sociales, guiones y más. Con plantillas predefinidas para acelerar tu proceso creativo.</p>
-            <div class="feature-badge">Contenido único</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sección de Limitaciones -->
-      <div class="section-container">
-        <div class="section-title warning">
-          <i class="fas fa-exclamation-triangle"></i>
-          <h2>Limitaciones</h2>
-        </div>
-
-        <div class="limitations-grid">
-          <div class="limitation-card">
-            <div class="icon-wrapper warning">
-              <i class="fas fa-dollar-sign"></i>
-            </div>
-            <h3>Costo del Servicio</h3>
-            <p>Las funciones premium requieren una suscripción mensual. El plan gratuito tiene restricciones significativas en el uso diario.</p>
-            <div class="price-info">
-              <span class="price-tag">Desde $19/mes</span>
-            </div>
-          </div>
-
-          <div class="limitation-card">
-            <div class="icon-wrapper warning">
-              <i class="fas fa-clock"></i>
-            </div>
-            <h3>Límite de Palabras</h3>
-            <p>Cada plan tiene un límite mensual de palabras generadas. Una vez alcanzado, debes esperar al siguiente ciclo o actualizar tu plan.</p>
-            <div class="price-info">
-              <span class="limit-tag">10,000 - 100,000 palabras/mes</span>
-            </div>
-          </div>
-
-          <div class="limitation-card">
-            <div class="icon-wrapper warning">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>Programación Limitada</h3>
-            <p>Aunque puede generar código, no es tan robusto como otras IAs especializadas en desarrollo. Puede tener dificultades con algoritmos complejos.</p>
-          </div>
-
-          <div class="limitation-card">
-            <div class="icon-wrapper warning">
-              <i class="fas fa-sync-alt"></i>
-            </div>
-            <h3>Precisión Variable</h3>
-            <p>Las búsquedas en tiempo real no siempre garantizan información 100% precisa. Es importante verificar datos críticos en fuentes oficiales.</p>
-          </div>
-
-          <div class="limitation-card">
-            <div class="icon-wrapper warning">
-              <i class="fas fa-wifi"></i>
-            </div>
-            <h3>Dependencia de Internet</h3>
-            <p>Requiere una conexión a internet estable y rápida para funcionar correctamente. No hay versión offline disponible.</p>
-          </div>
-
-          <div class="limitation-card">
-            <div class="icon-wrapper warning">
-              <i class="fas fa-user-clock"></i>
-            </div>
-            <h3>Curva de Aprendizaje</h3>
-            <p>Para aprovechar todas las funciones y personalidades, se necesita tiempo de exploración y adaptación a la plataforma.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sección de Comparación -->
-      <div class="section-container">
-        <div class="section-title comparison">
-          <i class="fas fa-chart-line"></i>
-          <h2>Comparación con Otras IAs del Mercado</h2>
-        </div>
-
-        <div class="comparison-wrapper">
-          <div class="comparison-intro">
-            <p>Para ayudarte a tomar una decisión informada, hemos comparado ChatSonic con las principales alternativas del mercado. Cada IA tiene sus fortalezas únicas según tu caso de uso.</p>
-          </div>
-
-          <div class="comparison-grid">
-            <!-- ChatGPT -->
-            <div class="ai-comparison-card">
-              <div class="ai-logo chatgpt">
-                <i class="fas fa-robot"></i>
-              </div>
-              <h3>ChatGPT</h3>
-              <div class="ai-rating">
-                <span class="stars">★★★★★</span>
-                <span class="rating-text">Líder del mercado</span>
-              </div>
-              
-              <div class="ai-features">
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Respuestas extremadamente detalladas</span>
-                </div>
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Excelente para programación</span>
-                </div>
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Gran comunidad y recursos</span>
-                </div>
-                <div class="feature-item con">
-                  <i class="fas fa-minus-circle"></i>
-                  <span>Sin acceso a internet (v. gratuita)</span>
-                </div>
-                <div class="feature-item con">
-                  <i class="fas fa-minus-circle"></i>
-                  <span>Información limitada hasta 2023</span>
-                </div>
-              </div>
-
-              <div class="best-for">
-                <strong>Ideal para:</strong> Desarrollo, análisis profundo, tareas académicas
-              </div>
-            </div>
-
-            <!-- Google Bard -->
-            <div class="ai-comparison-card">
-              <div class="ai-logo bard">
-                <i class="fas fa-gem"></i>
-              </div>
-              <h3>Google Bard</h3>
-              <div class="ai-rating">
-                <span class="stars">★★★★☆</span>
-                <span class="rating-text">Integración Google</span>
-              </div>
-              
-              <div class="ai-features">
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Integración con servicios Google</span>
-                </div>
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Información actualizada</span>
-                </div>
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Completamente gratuito</span>
-                </div>
-                <div class="feature-item con">
-                  <i class="fas fa-minus-circle"></i>
-                  <span>Menos opciones de personalización</span>
-                </div>
-                <div class="feature-item con">
-                  <i class="fas fa-minus-circle"></i>
-                  <span>Creatividad limitada en algunas tareas</span>
-                </div>
-              </div>
-
-              <div class="best-for">
-                <strong>Ideal para:</strong> Búsquedas, usuarios de Google Workspace
-              </div>
-            </div>
-
-            <!-- Claude -->
-            <div class="ai-comparison-card">
-              <div class="ai-logo claude">
-                <i class="fas fa-sparkles"></i>
-              </div>
-              <h3>Claude AI</h3>
-              <div class="ai-rating">
-                <span class="stars">★★★★☆</span>
-                <span class="rating-text">Análisis avanzado</span>
-              </div>
-              
-              <div class="ai-features">
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Comprensión contextual superior</span>
-                </div>
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Análisis profundo y detallado</span>
-                </div>
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Enfoque en seguridad y ética</span>
-                </div>
-                <div class="feature-item con">
-                  <i class="fas fa-minus-circle"></i>
-                  <span>Disponibilidad limitada en algunos países</span>
-                </div>
-                <div class="feature-item con">
-                  <i class="fas fa-minus-circle"></i>
-                  <span>Sin generación de imágenes</span>
-                </div>
-              </div>
-
-              <div class="best-for">
-                <strong>Ideal para:</strong> Análisis de documentos, escritura profesional
-              </div>
-            </div>
-
-            <!-- ChatSonic -->
-            <div class="ai-comparison-card featured">
-              <div class="featured-badge">
-                <i class="fas fa-star"></i> Evaluado
-              </div>
-              <div class="ai-logo chatsonic">
-                <i class="fas fa-bolt"></i>
-              </div>
-              <h3>ChatSonic</h3>
-              <div class="ai-rating">
-                <span class="stars">★★★★☆</span>
-                <span class="rating-text">Más versátil</span>
-              </div>
-              
-              <div class="ai-features">
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Información en tiempo real</span>
-                </div>
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Generación de imágenes integrada</span>
-                </div>
-                <div class="feature-item pro">
-                  <i class="fas fa-plus-circle"></i>
-                  <span>Comandos de voz disponibles</span>
-                </div>
-                <div class="feature-item con">
-                  <i class="fas fa-minus-circle"></i>
-                  <span>Requiere suscripción premium</span>
-                </div>
-                <div class="feature-item con">
-                  <i class="fas fa-minus-circle"></i>
-                  <span>Límites de uso mensuales</span>
-                </div>
-              </div>
-
-              <div class="best-for">
-                <strong>Ideal para:</strong> Marketing, contenido multimedia, búsquedas actualizadas
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tabla Comparativa -->
-        <div class="comparison-table">
-          <h3><i class="fas fa-table"></i> Tabla Comparativa</h3>
-          <div class="table-responsive">
-            <table>
-              <thead>
-                <tr>
-                  <th>Característica</th>
-                  <th>ChatSonic</th>
-                  <th>ChatGPT</th>
-                  <th>Bard</th>
-                  <th>Claude</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Búsqueda en tiempo real</strong></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-times no"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-times no"></i></td>
-                </tr>
-                <tr>
-                  <td><strong>Generación de imágenes</strong></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-times no"></i></td>
-                  <td><i class="fas fa-times no"></i></td>
-                </tr>
-                <tr>
-                  <td><strong>Comandos de voz</strong></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-times no"></i></td>
-                </tr>
-                <tr>
-                  <td><strong>Versión gratuita</strong></td>
-                  <td><i class="fas fa-check-circle limited"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                </tr>
-                <tr>
-                  <td><strong>Programación avanzada</strong></td>
-                  <td><i class="fas fa-check-circle limited"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-check-circle limited"></i></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                </tr>
-                <tr>
-                  <td><strong>Personalización</strong></td>
-                  <td><i class="fas fa-check yes"></i></td>
-                  <td><i class="fas fa-check-circle limited"></i></td>
-                  <td><i class="fas fa-times no"></i></td>
-                  <td><i class="fas fa-check-circle limited"></i></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Conclusión Final -->
-        <div class="final-conclusion">
-          <div class="conclusion-icon">
-            <i class="fas fa-lightbulb"></i>
-          </div>
-          <div class="conclusion-content">
-            <h3>Conclusión y Recomendación</h3>
-            <p>
-              <strong>ChatSonic</strong> destaca por su <strong>versatilidad y capacidades multimedia</strong>, siendo ideal para profesionales del marketing, creadores de contenido y equipos que necesitan información actualizada constantemente. Su capacidad de búsqueda en tiempo real y generación de imágenes lo hace único en el mercado.
-            </p>
-            <p>
-              Sin embargo, si tu enfoque principal es el <strong>desarrollo de software</strong> o necesitas análisis extremadamente detallados, <strong>ChatGPT o Claude</strong> podrían ser mejores opciones. Para usuarios que buscan una solución gratuita con buena integración de servicios, <strong>Google Bard</strong> es una excelente alternativa.
-            </p>
-            <div class="recommendation-box">
-              <i class="fas fa-trophy"></i>
-              <strong>Recomendación:</strong> Prueba ChatSonic si necesitas una herramienta todo-en-uno para marketing digital, contenido creativo y estar siempre actualizado con información en tiempo real.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Botón de regreso -->
-      <div class="back-button-container">
-        <a href="index.html" class="back-button">
-          <i class="fas fa-arrow-left"></i>
-          Volver al inicio
-        </a>
-      </div>
-    </section>
-  </div>
-
-  <script src="scripts/script.js"></script>
-  <script src="scripts/parte4.js"></script>
-</body>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/parte4.js"></script>
+  </body>
 </html>

@@ -1,213 +1,275 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChatSonic - Conclusiones y Futuro</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/parte5.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatSonic - Conclusiones y Futuro</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/parte5.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-</head>
-<body>
-  <header class="header">
-    <div class="logo-container">
-      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Logo ChatSonic" class="logo" />
-      <h1>CHATSONIC</h1>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png"
+          alt="Logo ChatSonic"
+          class="logo"
+        />
+        <h1>CHATSONIC</h1>
+      </div>
+
+      <button id="toggle-theme" class="theme-btn" title="Cambiar tema">
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
+
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li data-page="inicio" onclick="window.location.href='index.html'">
+            <span>Inicio</span><i class="fas fa-home"></i>
+          </li>
+          <li
+            data-page="funciones"
+            onclick="window.location.href='parte2.html'"
+          >
+            <span>Funciones Principales</span><i class="fas fa-cogs"></i>
+          </li>
+          <li data-page="ventajas" onclick="window.location.href='parte4.html'">
+            <span>Ventajas y Limitaciones</span
+            ><i class="fas fa-balance-scale"></i>
+          </li>
+          <li data-page="conclusiones" class="active">
+            <span
+              >Conclusiones y
+              <span class="highlight-future">&nbsp;Futuro</span></span
+            ><i class="fas fa-lightbulb"></i>
+          </li>
+          <li data-page="contactos">
+            <span>Contactos</span><i class="fas fa-user-friends"></i>
+          </li>
+          <li data-page="configuracion">
+            <span>Configuración</span><i class="fas fa-cog"></i>
+          </li>
+          <li data-page="ayuda">
+            <span>Ayuda</span><i class="fas fa-question-circle"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main-content">
+        <h2>Conclusiones y Futuro de ChatSonic</h2>
+        <p>
+          ChatSonic representa un paso significativo en la evolución de los
+          asistentes de IA conversacionales, combinando potencia, accesibilidad
+          y funcionalidad avanzada. A continuación, exploramos su potencial, las
+          tendencias que lo rodean, los desafíos éticos y las mejoras futuras
+          que podrían consolidarlo como líder en su campo.
+        </p>
+
+        <!-- SECCIÓN: POTENCIAL -->
+        <div class="info-section">
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-rocket"></i>
+              <h3>Potencial de ChatSonic</h3>
+            </div>
+            <ul class="feature-list">
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Automatización inteligente</strong>
+                  <p>
+                    Puede integrarse en flujos de trabajo empresariales,
+                    automatizando tareas repetitivas como redacción,
+                    investigación y análisis de datos.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Educación personalizada</strong>
+                  <p>
+                    Adapta respuestas a niveles académicos, ofreciendo tutorías
+                    adaptativas y apoyo en tiempo real.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <strong>Asistencia creativa</strong>
+                  <p>
+                    Apoya a escritores, diseñadores y creadores generando ideas,
+                    guiones, descripciones y contenido multimedia.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SECCIÓN: TENDENCIAS FUTURAS -->
+        <div class="comparison-section">
+          <h3><i class="fas fa-chart-line"></i> Tendencias Futuras</h3>
+          <div class="comparison-grid">
+            <div class="comparison-card highlight">
+              <div class="ai-header">
+                <i class="fas fa-brain"></i>
+                <h4>Inteligencia Emocional</h4>
+              </div>
+              <div class="comparison-content">
+                <p>
+                  ChatSonic podría evolucionar hacia modelos capaces de detectar
+                  y responder al estado emocional del usuario, mejorando la
+                  empatía y la experiencia humana.
+                </p>
+              </div>
+            </div>
+            <div class="comparison-card">
+              <div class="ai-header">
+                <i class="fas fa-globe-americas"></i>
+                <h4>Soporte Multilingüe Avanzado</h4>
+              </div>
+              <div class="comparison-content">
+                <p>
+                  Ampliación de capacidades lingüísticas con comprensión
+                  cultural profunda, no solo traducción literal.
+                </p>
+              </div>
+            </div>
+            <div class="comparison-card">
+              <div class="ai-header">
+                <i class="fas fa-robot"></i>
+                <h4>Integración con Hardware</h4>
+              </div>
+              <div class="comparison-content">
+                <p>
+                  Conexión con dispositivos IoT, vehículos autónomos o
+                  asistentes físicos para interactuar en entornos reales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECCIÓN: ÉTICA Y RESPONSABILIDAD -->
+        <div class="info-section">
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-balance-scale"></i>
+              <h3>Consideraciones Éticas</h3>
+            </div>
+            <ul class="feature-list">
+              <li>
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                  <strong>Sesgos y justicia algorítmica</strong>
+                  <p>
+                    Es crucial mitigar sesgos en los datos de entrenamiento para
+                    evitar discriminación o desinformación sistemática.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                  <strong>Privacidad y consentimiento</strong>
+                  <p>
+                    Los usuarios deben tener control sobre sus datos y saber
+                    cómo se utilizan en la interacción con la IA.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                  <strong>Transparencia y explicabilidad</strong>
+                  <p>
+                    Las decisiones de la IA deben ser rastreables y
+                    comprensibles para los usuarios, especialmente en contextos
+                    críticos (salud, justicia).
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SECCIÓN: MEJORAS FUTURAS -->
+        <div class="comparison-section">
+          <h3><i class="fas fa-cogs"></i> Mejoras Futuras Propuestas</h3>
+          <div class="comparison-grid">
+            <div class="comparison-card">
+              <div class="ai-header">
+                <i class="fas fa-memory"></i>
+                <h4>Memoria Contextual Extendida</h4>
+              </div>
+              <div class="comparison-content">
+                <p>
+                  Capacidad de recordar conversaciones anteriores durante largos
+                  períodos, mejorando la coherencia y personalización.
+                </p>
+              </div>
+            </div>
+            <div class="comparison-card">
+              <div class="ai-header">
+                <i class="fas fa-search-plus"></i>
+                <h4>Búsqueda en Tiempo Real + Verificación</h4>
+              </div>
+              <div class="comparison-content">
+                <p>
+                  Integrar fuentes confiables en vivo y validar información
+                  antes de entregarla, reduciendo riesgos de “hallucinaciones”.
+                </p>
+              </div>
+            </div>
+            <div class="comparison-card highlight">
+              <div class="ai-header">
+                <i class="fas fa-users"></i>
+                <h4>Colaboración Humano-IA</h4>
+              </div>
+              <div class="comparison-content">
+                <p>
+                  Diseñar interfaces que permitan a humanos y IA trabajar juntos
+                  como equipos, no como sustitutos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONCLUSIÓN FINAL -->
+        <div class="conclusion">
+          <i class="fas fa-star"></i>
+          <p>
+            ChatSonic no es solo una herramienta tecnológica; es un puente entre
+            la inteligencia humana y artificial. Su futuro dependerá de cómo
+            equilibremos innovación con responsabilidad ética, privacidad y
+            transparencia. Con mejoras estratégicas y un enfoque centrado en el
+            usuario, tiene el potencial de transformar industrias enteras —
+            desde la educación hasta la salud, pasando por el entretenimiento y
+            la productividad empresarial.
+          </p>
+        </div>
+
+        <!-- Botón de regreso -->
+        <div class="back-button-container">
+          <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al inicio
+          </a>
+        </div>
+      </section>
     </div>
 
-    <button id="toggle-theme" class="theme-btn" title="Cambiar tema">
-      <i class="fas fa-moon"></i>
-    </button>
-  </header>
-
-  <div class="container">
-    <nav class="sidebar">
-      <ul>
-        <li data-page="inicio" onclick="window.location.href='index.html'">
-          <span>Inicio</span><i class="fas fa-home"></i>
-        </li>
-        <li data-page="mensajes">
-          <span>Mensajes</span><i class="fas fa-comments"></i>
-        </li>
-        <li data-page="ventajas" onclick="window.location.href='parte4.html'">
-          <span>Ventajas y Limitaciones</span><i class="fas fa-balance-scale"></i>
-        </li>
-        <li data-page="conclusiones" class="active">
-          <span>Conclusiones y <span class="highlight-future">&nbsp;Futuro</span></span><i class="fas fa-lightbulb"></i>
-        </li>
-        <li data-page="contactos">
-          <span>Contactos</span><i class="fas fa-user-friends"></i>
-        </li>
-        <li data-page="configuracion">
-          <span>Configuración</span><i class="fas fa-cog"></i>
-        </li>
-        <li data-page="ayuda">
-          <span>Ayuda</span><i class="fas fa-question-circle"></i>
-        </li>
-      </ul>
-    </nav>
-
-    <section class="main-content">
-      <h2>Conclusiones y Futuro de ChatSonic</h2>
-      <p>ChatSonic representa un paso significativo en la evolución de los asistentes de IA conversacionales, combinando potencia, accesibilidad y funcionalidad avanzada. A continuación, exploramos su potencial, las tendencias que lo rodean, los desafíos éticos y las mejoras futuras que podrían consolidarlo como líder en su campo.</p>
-
-      <!-- SECCIÓN: POTENCIAL -->
-      <div class="info-section">
-        <div class="card">
-          <div class="card-header">
-            <i class="fas fa-rocket"></i>
-            <h3>Potencial de ChatSonic</h3>
-          </div>
-          <ul class="feature-list">
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <div>
-                <strong>Automatización inteligente</strong>
-                <p>Puede integrarse en flujos de trabajo empresariales, automatizando tareas repetitivas como redacción, investigación y análisis de datos.</p>
-              </div>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <div>
-                <strong>Educación personalizada</strong>
-                <p>Adapta respuestas a niveles académicos, ofreciendo tutorías adaptativas y apoyo en tiempo real.</p>
-              </div>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
-              <div>
-                <strong>Asistencia creativa</strong>
-                <p>Apoya a escritores, diseñadores y creadores generando ideas, guiones, descripciones y contenido multimedia.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- SECCIÓN: TENDENCIAS FUTURAS -->
-      <div class="comparison-section">
-        <h3><i class="fas fa-chart-line"></i> Tendencias Futuras</h3>
-        <div class="comparison-grid">
-          <div class="comparison-card highlight">
-            <div class="ai-header">
-              <i class="fas fa-brain"></i>
-              <h4>Inteligencia Emocional</h4>
-            </div>
-            <div class="comparison-content">
-              <p>ChatSonic podría evolucionar hacia modelos capaces de detectar y responder al estado emocional del usuario, mejorando la empatía y la experiencia humana.</p>
-            </div>
-          </div>
-          <div class="comparison-card">
-            <div class="ai-header">
-              <i class="fas fa-globe-americas"></i>
-              <h4>Soporte Multilingüe Avanzado</h4>
-            </div>
-            <div class="comparison-content">
-              <p>Ampliación de capacidades lingüísticas con comprensión cultural profunda, no solo traducción literal.</p>
-            </div>
-          </div>
-          <div class="comparison-card">
-            <div class="ai-header">
-              <i class="fas fa-robot"></i>
-              <h4>Integración con Hardware</h4>
-            </div>
-            <div class="comparison-content">
-              <p>Conexión con dispositivos IoT, vehículos autónomos o asistentes físicos para interactuar en entornos reales.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SECCIÓN: ÉTICA Y RESPONSABILIDAD -->
-      <div class="info-section">
-        <div class="card">
-          <div class="card-header">
-            <i class="fas fa-balance-scale"></i>
-            <h3>Consideraciones Éticas</h3>
-          </div>
-          <ul class="feature-list">
-            <li>
-              <i class="fas fa-exclamation-triangle"></i>
-              <div>
-                <strong>Sesgos y justicia algorítmica</strong>
-                <p>Es crucial mitigar sesgos en los datos de entrenamiento para evitar discriminación o desinformación sistemática.</p>
-              </div>
-            </li>
-            <li>
-              <i class="fas fa-exclamation-triangle"></i>
-              <div>
-                <strong>Privacidad y consentimiento</strong>
-                <p>Los usuarios deben tener control sobre sus datos y saber cómo se utilizan en la interacción con la IA.</p>
-              </div>
-            </li>
-            <li>
-              <i class="fas fa-exclamation-triangle"></i>
-              <div>
-                <strong>Transparencia y explicabilidad</strong>
-                <p>Las decisiones de la IA deben ser rastreables y comprensibles para los usuarios, especialmente en contextos críticos (salud, justicia).</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- SECCIÓN: MEJORAS FUTURAS -->
-      <div class="comparison-section">
-        <h3><i class="fas fa-cogs"></i> Mejoras Futuras Propuestas</h3>
-        <div class="comparison-grid">
-          <div class="comparison-card">
-            <div class="ai-header">
-              <i class="fas fa-memory"></i>
-              <h4>Memoria Contextual Extendida</h4>
-            </div>
-            <div class="comparison-content">
-              <p>Capacidad de recordar conversaciones anteriores durante largos períodos, mejorando la coherencia y personalización.</p>
-            </div>
-          </div>
-          <div class="comparison-card">
-            <div class="ai-header">
-              <i class="fas fa-search-plus"></i>
-              <h4>Búsqueda en Tiempo Real + Verificación</h4>
-            </div>
-            <div class="comparison-content">
-              <p>Integrar fuentes confiables en vivo y validar información antes de entregarla, reduciendo riesgos de “hallucinaciones”.</p>
-            </div>
-          </div>
-          <div class="comparison-card highlight">
-            <div class="ai-header">
-              <i class="fas fa-users"></i>
-              <h4>Colaboración Humano-IA</h4>
-            </div>
-            <div class="comparison-content">
-              <p>Diseñar interfaces que permitan a humanos y IA trabajar juntos como equipos, no como sustitutos.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CONCLUSIÓN FINAL -->
-      <div class="conclusion">
-        <i class="fas fa-star"></i>
-        <p>
-          ChatSonic no es solo una herramienta tecnológica; es un puente entre la inteligencia humana y artificial. Su futuro dependerá de cómo equilibremos innovación con responsabilidad ética, privacidad y transparencia. Con mejoras estratégicas y un enfoque centrado en el usuario, tiene el potencial de transformar industrias enteras — desde la educación hasta la salud, pasando por el entretenimiento y la productividad empresarial.
-        </p>
-      </div>
-
-      <!-- Botón de regreso -->
-      <div class="back-button-container">
-        <a href="index.html" class="back-button">
-          <i class="fas fa-arrow-left"></i>
-          Volver al inicio
-        </a>
-      </div>
-    </section>
-  </div>
-
-  <script src="scripts/script.js"></script>
-  <script src="scripts/parte5.js"></script>
-</body>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/parte5.js"></script>
+  </body>
 </html>

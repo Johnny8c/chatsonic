@@ -1,0 +1,203 @@
+/* ===== ESTILOS ESPECÍFICOS PARA FUNCIONES ===== */
+
+/* ===== HERO SECTION SIN FONDO ===== */
+.hero-section {
+  background: none; /* eliminamos el fondo degradado */
+  border-radius: 25px;
+  padding: 70px 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  box-shadow: 0 15px 50px rgba(99, 94, 242, 0.2); /* sombra más sutil */
+  position: relative;
+  overflow: hidden;
+  color: #cbbaff; 
+}
+
+
+.hero-section::before {
+  content: none;
+}
+
+.hero-icon {
+  font-size: 5em;
+  margin-bottom: 25px;
+  background: linear-gradient(
+    90deg,
+    #635ef2,
+    #bc6bf2,
+    #d9529c
+  ); /* degradado morado */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 5px 20px rgba(99, 94, 242, 0.4); /* sombra morada */
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Título principal morado claro */
+.hero-section h1 {
+  color: #bc6bf2; /* morado claro */
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+/* Subtítulo morado claro */
+.hero-subtitle {
+  color: #020202; /* morado claro */
+  font-size: 1.2em;
+}
+
+/* Section Containers */
+.section-container {
+  margin-bottom: 70px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(90deg, #635ef2, #bc6bf2, #d9529c) 1;
+}
+
+.section-title i {
+  font-size: 2.5em;
+  color: #bc6bf2;
+  filter: drop-shadow(0 3px 10px rgba(16, 185, 129, 0.3));
+}
+
+.section-title h2 {
+  font-size: 2.3em;
+  color: #1f2937;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Functions Grid */
+.functions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.function-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f9fafb 100%);
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  border: 3px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.function-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #635ef2, #bc6bf2, #d9529c);
+}
+
+.icon-wrapper.functions {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 2.5em;
+  transition: all 0.5s ease;
+  background: linear-gradient(135deg, #635ef2, #bc6bf2, #d9529c 100%);
+  color: white;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+
+.function-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 50px rgb(99, 94, 242);
+  border-color: #bc6bf2;
+}
+
+.function-card:hover .icon-wrapper.functions {
+  transform: scale(1.15) rotate(10deg);
+  box-shadow: 0 15px 40px rgb(99, 94, 242);
+}
+
+.function-card h3 {
+  font-size: 1.6em;
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.function-card p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.05em;
+}
+
+.feature-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #635ef2, #bc6bf2, #d9529c 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.9em;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(67, 16, 185, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== BACK BUTTON ===== */
+.back-button-container {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #635ef2 0%, #bc6bf2 50%, #d9529c 100%);
+  color: white;
+  padding: 18px 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1em;
+  box-shadow: 0 8px 25px rgba(99, 94, 242, 0.4);
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.back-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(99, 94, 242, 0.5);
+}
+
+.back-button i {
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+}
+
+.back-button:hover i {
+  transform: translateX(-8px);
+}

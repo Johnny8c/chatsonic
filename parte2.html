@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatSonic - Funciones Principales</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/parte2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png"
+          alt="Logo ChatSonic"
+          class="logo"
+        />
+        <h1>CHATSONIC</h1>
+      </div>
+      <button id="toggle-theme" class="theme-btn" title="Cambiar tema">
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
+
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li data-page="inicio" onclick="window.location.href='index.html'">
+            <span>Inicio</span><i class="fas fa-home"></i>
+          </li>
+          <li data-page="funciones" class="active">
+            <span>Funciones Principales</span><i class="fas fa-cogs"></i>
+          </li>
+          <li data-page="ventajas" onclick="window.location.href='parte4.html'">
+            <span>Ventajas y Limitaciones</span
+            ><i class="fas fa-balance-scale"></i>
+          </li>
+          <li
+            data-page="conclusiones"
+            onclick="window.location.href='parte5.html'"
+          >
+            <span
+              >Conclusiones y
+              <span class="highlight-future">&nbsp;Futuro</span></span
+            ><i class="fas fa-lightbulb"></i>
+          </li>
+          <li data-page="contactos">
+            <span>Contactos</span><i class="fas fa-user-friends"></i>
+          </li>
+          <li data-page="configuracion">
+            <span>Configuración</span><i class="fas fa-cog"></i>
+          </li>
+          <li data-page="ayuda">
+            <span>Ayuda</span><i class="fas fa-question-circle"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main-content">
+        <!-- Hero Section -->
+        <div class="hero-section">
+          <div class="hero-content">
+            <i class="fas fa-robot hero-icon"></i>
+            <h1>Funciones Principales de ChatSonic</h1>
+            <p class="hero-subtitle">
+              Descubre cómo puedes interactuar y aprovechar esta IA
+              conversacional
+            </p>
+          </div>
+        </div>
+
+        <!-- Funciones de ChatSonic -->
+        <div class="section-container">
+          <div class="section-title">
+            <i class="fas fa-cogs"></i>
+            <h2>Funciones Clave</h2>
+          </div>
+
+          <div class="functions-grid">
+            <div class="function-card">
+              <div class="icon-wrapper functions">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Búsqueda en Tiempo Real</h3>
+              <p>
+                Accede a información actualizada directamente desde internet
+                para recibir respuestas precisas y recientes.
+              </p>
+              <div class="feature-badge">Información actualizada</div>
+            </div>
+
+            <div class="function-card">
+              <div class="icon-wrapper functions">
+                <i class="fas fa-microphone"></i>
+              </div>
+              <h3>Comandos de Voz</h3>
+              <p>
+                Interactúa mediante voz para un manejo más natural y manos
+                libres en tus consultas.
+              </p>
+              <div class="feature-badge">Voz activa</div>
+            </div>
+
+            <div class="function-card">
+              <div class="icon-wrapper functions">
+                <i class="fas fa-image"></i>
+              </div>
+              <h3>Generación de Imágenes</h3>
+              <p>
+                Crea imágenes únicas basadas en descripciones de texto para
+                proyectos creativos o educativos.
+              </p>
+              <div class="feature-badge">IA Artística</div>
+            </div>
+
+            <div class="function-card">
+              <div class="icon-wrapper functions">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Personalización Avanzada</h3>
+              <p>
+                Selecciona diferentes personalidades de IA según la tarea:
+                asistente, tutor o compañero creativo.
+              </p>
+              <div class="feature-badge">16+ Personalidades</div>
+            </div>
+
+            <div class="function-card">
+              <div class="icon-wrapper functions">
+                <i class="fas fa-language"></i>
+              </div>
+              <h3>Soporte Multiidioma</h3>
+              <p>
+                Comunícate en más de 25 idiomas con traducciones contextuales
+                precisas.
+              </p>
+              <div class="feature-badge">25+ Idiomas</div>
+            </div>
+
+            <div class="function-card">
+              <div class="icon-wrapper functions">
+                <i class="fas fa-pen-fancy"></i>
+              </div>
+              <h3>Asistencia Creativa</h3>
+              <p>
+                Genera contenido como artículos, posts o guiones con ayuda de
+                plantillas inteligentes.
+              </p>
+              <div class="feature-badge">Contenido único</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón de regreso -->
+        <div class="back-button-container">
+          <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al inicio
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/parte2.js"></script>
+  </body>
+</html>

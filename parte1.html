@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatSonic - &iquest;Qu&eacute; es ChatSonic?</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/parte1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png"
+          alt="Logo ChatSonic"
+          class="logo"
+        />
+        <h1>CHATSONIC</h1>
+      </div>
+      <button id="toggle-theme" class="theme-btn" title="Cambiar tema">
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
+
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li data-page="inicio" onclick="window.location.href='./index.html'">
+            <span>Inicio</span><i class="fas fa-home"></i>
+          </li>
+          <li
+            data-page="presentacion"
+            class="active"
+            onclick="window.location.href='parte1.html'"
+          >
+            <span>&iquest;Qu&eacute; es ChatSonic?</span
+            ><i class="fas fa-circle-info"></i>
+          </li>
+          <li data-page="funciones" onclick="window.location.href='parte2.html'">
+            <span>Funciones Principales</span><i class="fas fa-cogs"></i>
+          </li>
+          <li
+            data-page="aplicaciones"
+            onclick="window.location.href='parte3.html'"
+          >
+            <span>Aplicaciones Pr&aacute;cticas</span
+            ><i class="fas fa-briefcase"></i>
+          </li>
+          <li data-page="ventajas" onclick="window.location.href='./parte4.html'">
+            <span>Ventajas y Limitaciones</span
+            ><i class="fas fa-balance-scale"></i>
+          </li>
+          <li
+            data-page="conclusiones"
+            onclick="window.location.href='./parte5.html'"
+          >
+            <span
+              >Conclusiones y
+              <span class="highlight-future">&nbsp;Futuro</span></span
+            ><i class="fas fa-lightbulb"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main-content parte1-content">
+        <div class="hero-banner" data-animate>
+          <div class="hero-text">
+            <span class="hero-tag">Introducci&oacute;n</span>
+            <h1>&iquest;Qu&eacute; es ChatSonic?</h1>
+            <p>
+              ChatSonic es un asistente conversacional creado por Writesonic
+              para combinar la generaci&oacute;n de texto basada en modelos GPT
+              con informaci&oacute;n en tiempo real, personalidades din&aacute;micas
+              y herramientas multimodales.
+            </p>
+            <div class="hero-badges">
+              <span><i class="fas fa-lightbulb"></i> Definici&oacute;n</span>
+              <span><i class="fas fa-timeline"></i> Origen</span>
+              <span><i class="fas fa-comments"></i> IA conversacional</span>
+              <span><i class="fas fa-code-compare"></i> Comparativa</span>
+            </div>
+          </div>
+          <div class="hero-illustration">
+            <div class="orbit">
+              <i class="fas fa-robot central"></i>
+              <span class="orbit-item">
+                <i class="fas fa-satellite"></i>
+              </span>
+              <span class="orbit-item delay">
+                <i class="fas fa-globe"></i>
+              </span>
+              <span class="orbit-item delay-2">
+                <i class="fas fa-brain"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="definition-grid">
+          <article class="definition-card" data-animate>
+            <header>
+              <i class="fas fa-lightbulb"></i>
+              <h2>Definici&oacute;n general</h2>
+            </header>
+            <p>
+              ChatSonic es una plataforma de inteligencia artificial generativa
+              que permite crear respuestas, ideas y recursos en lenguaje natural
+              usando modelos basados en GPT-4 y GPT-4.1. Integra b&uacute;squeda
+              web, memoria contextual y m&uacute;ltiples personalidades para adaptarse
+              a distintos escenarios.
+            </p>
+            <ul>
+              <li>
+                <strong>Modo di&aacute;logo:</strong> mantiene conversaciones
+                fluidas con seguimiento de contexto.
+              </li>
+              <li>
+                <strong>Acceso a la web:</strong> incorpora datos recientes
+                cuando el usuario lo solicita.
+              </li>
+              <li>
+                <strong>Multimodalidad:</strong> genera texto, im&aacute;genes y
+                contenidos estructurados.
+              </li>
+            </ul>
+          </article>
+
+          <article class="definition-card" data-animate>
+            <header>
+              <i class="fas fa-timeline"></i>
+              <h2>Origen y evoluci&oacute;n</h2>
+            </header>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="year">2021</span>
+                <p>
+                  Writesonic lanza su plataforma de generaci&oacute;n de contenido
+                  utilizando modelos GPT-3 como base para tareas de marketing.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span class="year">2022</span>
+                <p>
+                  Nace ChatSonic como respuesta a la necesidad de un asistente
+                  conversacional que combine la creatividad de GPT con datos
+                  actualizados mediante Google Search.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span class="year">2023-2024</span>
+                <p>
+                  Se incorporan plantillas, memoria ampliada, generaci&oacute;n de
+                  im&aacute;genes y soporte para modelos avanzados como GPT-4, Claude
+                  y otros proveedores.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <section class="ecosystem" data-animate>
+          <header class="section-header">
+            <i class="fas fa-network-wired"></i>
+            <div>
+              <h2>ChatSonic dentro de la IA conversacional</h2>
+              <p>
+                Comparte principios con otros bots conversacionales, pero
+                integra herramientas que ampl&iacute;an sus casos de uso.
+              </p>
+            </div>
+          </header>
+
+          <div class="ecosystem-grid">
+            <div class="ecosystem-card">
+              <span class="card-icon gradient">
+                <i class="fas fa-brain"></i>
+              </span>
+              <h3>Motor de lenguaje GPT</h3>
+              <p>
+                Trabaja con modelos de la familia GPT para entender intenci&oacute;n
+                y generar respuestas coherentes en m&uacute;ltiples idiomas.
+              </p>
+            </div>
+            <div class="ecosystem-card">
+              <span class="card-icon gradient secondary">
+                <i class="fas fa-wave-square"></i>
+              </span>
+              <h3>Memoria conversacional</h3>
+              <p>
+                Conserva datos relevantes de la sesi&oacute;n para ofrecer continuidad
+                y personalizaci&oacute;n en di&aacute;logos largos.
+              </p>
+            </div>
+            <div class="ecosystem-card">
+              <span class="card-icon gradient accent">
+                <i class="fas fa-globe"></i>
+              </span>
+              <h3>Conexi&oacute;n a la web</h3>
+              <p>
+                Puede consultar fuentes externas para validar hechos o a&ntilde;adir
+                novedades, algo poco com&uacute;n en asistentes basados solo en
+                modelos entrenados.
+              </p>
+            </div>
+            <div class="ecosystem-card">
+              <span class="card-icon gradient neutral">
+                <i class="fas fa-person-rays"></i>
+              </span>
+              <h3>Personalidades predefinidas</h3>
+              <p>
+                Permite elegir roles como profesor, asesor creativo o analista,
+                facilitando conversaciones guiadas a un objetivo espec&iacute;fico.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="comparison" data-animate>
+          <header class="section-header">
+            <i class="fas fa-handshake-simple"></i>
+            <div>
+              <h2>Comparaci&oacute;n con ChatGPT</h2>
+              <p>
+                Ambos asistentes comparten tecnolog&iacute;as de lenguaje, pero se
+                diferencian en enfoque, acceso a datos y herramientas
+                disponibles.
+              </p>
+            </div>
+          </header>
+          <div class="comparison-grid">
+            <article class="comparison-card">
+              <h3>Fortalezas de ChatSonic</h3>
+              <ul>
+                <li>
+                  <strong>Datos recientes:</strong> integraci&oacute;n nativa con
+                  Google Search para obtener informaci&oacute;n actualizada.
+                </li>
+                <li>
+                  <strong>Personalidades configurables:</strong> roles listos
+                  para marketing, investigaci&oacute;n o educaci&oacute;n.
+                </li>
+                <li>
+                  <strong>Multimodalidad integrada:</strong> generaci&oacute;n de
+                  im&aacute;genes con Stable Diffusion y acceso a plantillas.
+                </li>
+              </ul>
+            </article>
+
+            <article class="comparison-card">
+              <h3>Fortalezas de ChatGPT</h3>
+              <ul>
+                <li>
+                  <strong>Disponibilidad masiva:</strong> interfaz &uacute;nica y
+                  ecosistema de complementos oficiales.
+                </li>
+                <li>
+                  <strong>Entrenamiento propio:</strong> modelos ajustados por
+                  OpenAI con amplios recursos de afinado.
+                </li>
+                <li>
+                  <strong>Fiabilidad en largo plazo:</strong> infraestructura y
+                  despliegue directo del proveedor del modelo.
+                </li>
+              </ul>
+            </article>
+
+            <article class="comparison-card hybrid">
+              <h3>&iquest;Cu&aacute;ndo elegir cada uno?</h3>
+              <ul>
+                <li>
+                  <strong>ChatSonic:</strong> cuando se necesita personalizaci&oacute;n
+                  r&aacute;pida, conexi&oacute;n a la web o creaci&oacute;n de im&aacute;genes sin salir
+                  de la plataforma.
+                </li>
+                <li>
+                  <strong>ChatGPT:</strong> ideal para prototipado general,
+                  acceso a API oficiales o cuando se requiere alta estabilidad
+                  en modelos propios de OpenAI.
+                </li>
+                <li>
+                  <strong>Combinaci&oacute;n:</strong> algunas organizaciones usan
+                  ambos para equilibrar creatividad, control y frescura de datos.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <div class="takeaways" data-animate>
+          <div class="takeaway-card">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h3>Idea clave</h3>
+              <p>
+                ChatSonic ampl&iacute;a las capacidades de un chatbot est&aacute;ndar gracias
+                a la b&uacute;squeda en vivo y a sus roles personalizables.
+              </p>
+            </div>
+          </div>
+          <div class="takeaway-card">
+            <i class="fas fa-compass"></i>
+            <div>
+              <h3>Siguiente paso sugerido</h3>
+              <p>
+                Explora las funciones detalladas en la secci&oacute;n de
+                <a href="parte2.html">Funciones Principales</a> para conocer sus
+                herramientas pr&aacute;cticas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="back-button-container" data-animate>
+          <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Volver al inicio
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/parte1.js"></script>
+  </body>
+</html>

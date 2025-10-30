@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatSonic - Aplicaciones Prácticas</title>
+
+  <!-- Estilos globales del proyecto -->
+  <link rel="stylesheet" href="./css/styles.css" />
+   <!-- Estilos personalizados de parte3 -->
+  <link rel="stylesheet" href="./css/parte3.css" />
+  <!-- Reuso de estilos base de parte4 -->
+  <link rel="stylesheet" href="./css/parte4.css" />
+ 
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body class="p3">
+  <!-- Header con tema claro/oscuro -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Logo ChatSonic" class="logo" />
+      <h1>CHATSONIC</h1>
+    </div>
+
+    <button id="toggle-theme" class="theme-btn" title="Cambiar tema">
+      <i class="fas fa-moon"></i>
+    </button>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <ul>
+        <li data-page="inicio" onclick="window.location.href='./index.html'">
+          <span>Inicio</span><i class="fas fa-home"></i>
+        </li>
+        <li data-page="funciones" onclick="window.location.href='parte2.html'">
+            <span>Funciones Principales</span><i class="fas fa-cogs"></i>
+        </li>
+        <li data-page="aplicaciones" onclick="window.location.href='parte3.html'">
+          <span>Aplicaciones Prácticas</span><i class="fas fa-briefcase"></i>
+        </li>
+        <li data-page="ventajas" onclick="window.location.href='./parte4.html'">
+          <span>Ventajas y Limitaciones</span><i class="fas fa-balance-scale"></i>
+        </li>
+        <li data-page="conclusiones" onclick="window.location.href='./parte5.html'">
+          <span>Conclusiones y <span class="highlight-future">&nbsp;Futuro</span></span><i class="fas fa-lightbulb"></i>
+        </li>
+        
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section class="main-content">
+      <div class="hero-section">
+        <div class="hero-content">
+          <i class="fas fa-rocket hero-icon"></i>
+          <h1>Aplicaciones Prácticas de ChatSonic</h1>
+          <p class="hero-subtitle">
+            Casos de uso reales en <strong>educación</strong>, <strong>empresas</strong>, <strong>marketing</strong> y <strong>programación</strong> para trabajar más rápido y con mejor calidad.
+          </p>
+        </div>
+      </div>
+
+      <!-- EDUCACIÓN -->
+      <div class="section-container">
+        <div class="section-title">
+          <i class="fas fa-graduation-cap"></i>
+          <h2>Educación</h2>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-book-open"></i></div>
+            <h3>Tutoría y explicación guiada</h3>
+            <p>Explica temas complejos con ejemplos paso a paso, mapas mentales o analogías. Útil para Matemáticas, Programación, Redes, IA y más.</p>
+            <div class="feature-badge">Aprendizaje activo</div>
+          </div>
+
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-list-check"></i></div>
+            <h3>Generación de evaluaciones</h3>
+            <p>Crea cuestionarios, rúbricas y claves de corrección. Ahorra tiempo a docentes y monitores.</p>
+            <div class="feature-badge">Rúbricas & Quizzes</div>
+          </div>
+
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-language"></i></div>
+            <h3>Resumen y traducción</h3>
+            <p>Resume papers o PDFs y traduce manteniendo la terminología académica. Ideal para revisión rápida antes de exámenes.</p>
+            <div class="feature-badge">Síntesis</div>
+          </div>
+        </div>
+
+        <div class="comparison-intro" style="margin-top:25px">
+          <p><strong>Prompt útil:</strong> “Explícame con pasos y ejemplo práctico el <em>patrón Builder</em> y dame 3 ejercicios con solución breve.”</p>
+        </div>
+      </div>
+
+      <!-- EMPRESAS -->
+      <div class="section-container">
+        <div class="section-title">
+          <i class="fas fa-building"></i>
+          <h2>Empresas</h2>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-headset"></i></div>
+            <h3>Atención al cliente</h3>
+            <p>Genera respuestas tipo FAQ, guiones para soporte y resúmenes de conversaciones para equipos de atención.</p>
+            <div class="feature-badge">SOP & FAQs</div>
+          </div>
+
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-file-contract"></i></div>
+            <h3>Documentación y reportes</h3>
+            <p>Redacta minutas, briefings y reportes ejecutivos listos para compartir internamente.</p>
+            <div class="feature-badge">Docs rápidos</div>
+          </div>
+
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-magnifying-glass-chart"></i></div>
+            <h3>Análisis de información</h3>
+            <p>Extrae conclusiones de textos largos y sugiere acciones priorizadas.</p>
+            <div class="feature-badge">Insights</div>
+          </div>
+        </div>
+
+        <div class="comparison-intro" style="margin-top:25px">
+          <p><strong>Prompt útil:</strong> “Resume estos 3 correos del cliente y propone 5 acciones priorizadas con responsables y plazo.”</p>
+        </div>
+      </div>
+
+      <!-- MARKETING -->
+      <div class="section-container">
+        <div class="section-title">
+          <i class="fas fa-bullhorn"></i>
+          <h2>Marketing</h2>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-lightbulb"></i></div>
+            <h3>Ideas de campaña</h3>
+            <p>Genera conceptos creativos, tono de marca y calendarios semanales con objetivos, canales y KPIs sugeridos.</p>
+            <div class="feature-badge">Plan editorial</div>
+          </div>
+
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-pen-nib"></i></div>
+            <h3>Copy & variaciones</h3>
+            <p>Escribe titulares, descripciones y CTAs para redes, landing pages y anuncios.</p>
+            <div class="feature-badge">A/B Testing</div>
+          </div>
+
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-chart-line"></i></div>
+            <h3>SEO rápido</h3>
+            <p>Genera estructuras de artículo, metas y FAQs para mejorar visibilidad orgánica.</p>
+            <div class="feature-badge">On-page SEO</div>
+          </div>
+        </div>
+
+        <div class="comparison-intro" style="margin-top:25px">
+          <p><strong>Prompt útil:</strong> “Propón 10 titulares y 3 descripciones para un anuncio de <em>focos LED recargables</em> con enfoque en cortes de luz en Ecuador.”</p>
+        </div>
+      </div>
+
+      <!-- PROGRAMACIÓN -->
+      <div class="section-container">
+        <div class="section-title">
+          <i class="fas fa-code"></i>
+          <h2>Programación</h2>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-screwdriver-wrench"></i></div>
+            <h3>Boilerplate y scaffolding</h3>
+            <p>Crea estructuras iniciales (HTML/CSS/JS, Laravel, React) con archivos base y ejemplos de componentes.</p>
+            <div class="feature-badge">Kick-off</div>
+          </div>
+
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-bug"></i></div>
+            <h3>Debug & refactor</h3>
+            <p>Detecta errores comunes y mejora la legibilidad (nombres, funciones puras, DRY).</p>
+            <div class="feature-badge">Calidad</div>
+          </div>
+
+          <div class="advantage-card">
+            <div class="icon-wrapper success"><i class="fas fa-vial-circle-check"></i></div>
+            <h3>Pruebas y documentación</h3>
+            <p>Genera casos de prueba unitarios, de integración y docstrings/README de módulos.</p>
+            <div class="feature-badge">Testing</div>
+          </div>
+        </div>
+
+        <div class="comparison-intro" style="margin-top:25px">
+          <p><strong>Prompt útil:</strong> “Reescribe este controlador de Laravel aplicando buenas prácticas y agrega pruebas feature mínimas.”</p>
+        </div>
+      </div>
+
+     
+
+      <!-- Buenas prácticas -->
+      <div class="final-conclusion">
+        <div class="conclusion-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="conclusion-content">
+          <h3>Buenas prácticas</h3>
+          <p><strong>Especifica formato de salida</strong> (tabla, lista, JSON, código).</p>
+          <p><strong>Entrega insumos</strong> (textos o datos) para adaptar la respuesta.</p>
+          <p><strong>Revisa sesgos y exactitud</strong> en contenidos sensibles.</p>
+          <div class="recommendation-box">
+            <i class="fas fa-trophy"></i>
+            <strong>Tip:</strong> Guarda tus mejores prompts en el README para reutilizarlos.
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón volver -->
+      <div class="back-button-container">
+        <a href="./index.html" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+          Volver al inicio
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/parte3.js"></script>
+  
+</body>
+</html>
